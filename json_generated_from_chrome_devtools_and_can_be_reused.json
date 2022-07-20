@@ -1,0 +1,73 @@
+{
+  "title": "test",
+  "steps": [
+    {
+      "type": "setViewport",
+      "width": 772,
+      "height": 696,
+      "deviceScaleFactor": 1,
+      "isMobile": false,
+      "hasTouch": false,
+      "isLandscape": false
+    },
+    {
+      "type": "navigate",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "https://en.wikipedia.org/wiki/Main_Page",
+          "title": "Wikipedia, the free encyclopedia"
+        }
+      ]
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Search Wikipedia"
+        ],
+        [
+          "#searchInput"
+        ]
+      ],
+      "offsetY": 14,
+      "offsetX": 51.3984375
+    },
+    {
+      "type": "change",
+      "value": "Puppeteer (disambiguation)",
+      "selectors": [
+        [
+          "aria/Search Wikipedia"
+        ],
+        [
+          "#searchInput"
+        ]
+      ],
+      "target": "main"
+    },
+    {
+      "type": "click",
+      "target": "main",
+      "selectors": [
+        [
+          "aria/Go"
+        ],
+        [
+          "#searchButton"
+        ]
+      ],
+      "offsetY": 11,
+      "offsetX": 13,
+      "assertedEvents": [
+        {
+          "type": "navigation",
+          "url": "https://en.wikipedia.org/wiki/Puppeteer_(disambiguation)",
+          "title": ""
+        }
+      ]
+    }
+  ]
+}
